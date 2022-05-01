@@ -49453,7 +49453,7 @@ Object.defineProperty(exports, "__esModule", {
   value: true
 });
 exports.ZOO_PAGE = exports.COMPLETED = void 0;
-const ZOO_PAGE = '/zoo';
+const ZOO_PAGE = '/zoo_nft';
 exports.ZOO_PAGE = ZOO_PAGE;
 const COMPLETED = '/completed';
 exports.COMPLETED = COMPLETED;
@@ -50912,8 +50912,9 @@ function App() {
     return /*#__PURE__*/_react.default.createElement(_WellcomePage.default, null);
   }
 
+  console.log('App.js');
   return /*#__PURE__*/_react.default.createElement(_reactRouterDom.BrowserRouter, null, /*#__PURE__*/_react.default.createElement(_NavBar.default, null), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Routes, null, /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
-    path: _consts.ZOO_PAGE,
+    path: '/',
     element: /*#__PURE__*/_react.default.createElement(_Zoo.default, null)
   }), /*#__PURE__*/_react.default.createElement(_reactRouterDom.Route, {
     path: '/completed',
@@ -50970,7 +50971,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "57063" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59795" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
