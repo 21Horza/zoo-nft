@@ -5,7 +5,6 @@ import { initContract } from './utils'
 
 window.nearInitPromise = initContract()
   .then(() => {
-    console.log('index.js')
     ReactDOM.render(
       <App />,
       document.querySelector('#root')
