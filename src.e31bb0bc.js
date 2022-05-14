@@ -49276,7 +49276,7 @@ __exportStar(require("./browser-connect"), exports);
 require("error-polyfill");
 
 },{"./key_stores/browser-index":"../node_modules/near-api-js/lib/key_stores/browser-index.js","./common-index":"../node_modules/near-api-js/lib/common-index.js","./browser-connect":"../node_modules/near-api-js/lib/browser-connect.js","error-polyfill":"../node_modules/error-polyfill/index.js"}],"config.js":[function(require,module,exports) {
-const CONTRACT_NAME = 'zoo-nft.heyhey23.testnet';
+const CONTRACT_NAME = 'zoo_nft.heyhey23.testnet';
 
 function getConfig(env) {
   switch (env) {
@@ -50513,7 +50513,7 @@ const mintNFT = async donationAmount => {
   await window.contract.nft_mint({
     token_id: `${window.accountId}-recycle-tok`,
     metadata: {
-      title: "Donation to animals in Ukrain",
+      title: "Donation to animals in Ukraine",
       description: "Animal Rescuer",
       media: "https://bafkreifkuskpezdnn3m3jm5tf2ygkpcbwz2wijv4cozc5f3j6jdqvh7wru.ipfs.nftstorage.link/"
     },
@@ -50626,7 +50626,7 @@ var _peacoc = _interopRequireDefault(require("../assets/animals/peacoc.png"));
 
 var _consts = require("../routes/consts");
 
-var _animals = _interopRequireDefault(require("./animals.css"));
+require("./animals.css");
 
 var _MyModal = _interopRequireDefault(require("../modals/MyModal"));
 
@@ -50699,14 +50699,14 @@ const Zoo = () => {
     photo: _hedg.default,
     place: 'Dnipro'
   }, {
-    id: 6,
+    id: 5,
     name: 'parrot',
     img: _parrot.default,
     nickname: 'Kesha',
     photo: _parr.default,
     place: 'Lviv'
   }, {
-    id: 7,
+    id: 6,
     name: 'peacoc',
     img: _peacoc.default,
     nickname: 'Pasha',
@@ -50767,6 +50767,10 @@ const Zoo = () => {
   }), /*#__PURE__*/_react.default.createElement("p", {
     className: "animal__place"
   }, "Lives in ", animal.place), /*#__PURE__*/_react.default.createElement("button", {
+    style: {
+      backgroundColor: animal.id % 2 === 0 ? '#000dff' : '#ffea00',
+      color: animal.id % 2 === 0 ? '#fff' : '#000'
+    },
     onClick: feedHandler,
     disabled: false,
     className: "feedBtn"
@@ -50815,7 +50819,7 @@ const WellcomePage = () => {
     height: 400,
     width: 600,
     src: _zoo.default
-  }), /*#__PURE__*/_react.default.createElement("h2", null, "Wellcome to the zoo!"), /*#__PURE__*/_react.default.createElement("p", null, "Animals are in danger in Ukrain ", /*#__PURE__*/_react.default.createElement("sup", null, "\uD83C\uDDFA\uD83C\uDDE6")), /*#__PURE__*/_react.default.createElement("p", null, "Help them out and get your reward"), /*#__PURE__*/_react.default.createElement("button", {
+  }), /*#__PURE__*/_react.default.createElement("h2", null, "Wellcome to the zoo!"), /*#__PURE__*/_react.default.createElement("p", null, "Animals are in danger in Ukraine ", /*#__PURE__*/_react.default.createElement("sup", null, "\uD83C\uDDFA\uD83C\uDDE6")), /*#__PURE__*/_react.default.createElement("p", null, "Help them out and get your reward"), /*#__PURE__*/_react.default.createElement("button", {
     onClick: _utils.login,
     style: {
       marginTop: '1rem'
@@ -50970,7 +50974,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "63989" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53843" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
