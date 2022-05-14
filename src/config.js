@@ -1,4 +1,4 @@
-const CONTRACT_NAME = 'zoo-nft.heyhey23.testnet'
+const CONTRACT_NAME = 'zoo_nft.heyhey23.testnet'
 
 function getConfig(env) {
   switch (env) {

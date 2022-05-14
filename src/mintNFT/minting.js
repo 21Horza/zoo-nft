@@ -6,7 +6,7 @@ export const mintNFT = async (donationAmount) => {
       {
         token_id: `${window.accountId}-recycle-tok`,
         metadata: {
-          title: "Donation to animals in Ukrain",
+          title: "Donation to animals in Ukraine",
           description: "Animal Rescuer",
           media:
             "https://bafkreifkuskpezdnn3m3jm5tf2ygkpcbwz2wijv4cozc5f3j6jdqvh7wru.ipfs.nftstorage.link/",

@@ -1,20 +1,20 @@
-import React, { useState, useEffect } from 'react'
-import eagle from '../assets/animals/eagle.png'
-import flamingo from '../assets/animals/flamingo.png'
-import fox from '../assets/animals/fox.png'
-import hedgehog from '../assets/animals/hedgehog.png'
-import parrot from '../assets/animals/parrot.png'
-import peacoc from '../assets/animals/peacoc.png'
-import { COMPLETED } from '../routes/consts'
-import styles from './animals.css'
-import Modal from '../modals/MyModal'
-import logo from '../assets/logo.png'
-import eagl from '../assets/photos/eagl.jpeg'
-import flam from '../assets/photos/flam.jpeg'
-import foxx from '../assets/photos/foxx.jpeg'
-import hedg from '../assets/photos/hedg.jpeg'
-import parr from '../assets/photos/parr.jpeg'
-import peac from '../assets/photos/peac.jpeg'
+import React, { useState, useEffect } from 'react';
+import eagle from '../assets/animals/eagle.png';
+import flamingo from '../assets/animals/flamingo.png';
+import fox from '../assets/animals/fox.png';
+import hedgehog from '../assets/animals/hedgehog.png';
+import parrot from '../assets/animals/parrot.png';
+import peacoc from '../assets/animals/peacoc.png';
+import { COMPLETED } from '../routes/consts';
+import './animals.css';
+import Modal from '../modals/MyModal';
+import logo from '../assets/logo.png';
+import eagl from '../assets/photos/eagl.jpeg';
+import flam from '../assets/photos/flam.jpeg';
+import foxx from '../assets/photos/foxx.jpeg';
+import hedg from '../assets/photos/hedg.jpeg';
+import parr from '../assets/photos/parr.jpeg';
+import peac from '../assets/photos/peac.jpeg';
 
 const Zoo = () => {
   const [userHasNFT, setuserHasNFT] = useState(false);
@@ -48,8 +48,8 @@ const Zoo = () => {
     {id: 2, name: 'flamingo', img: flamingo, nickname: 'Aves', photo: flam, place: 'Kharkiv'},
     {id: 3, name: 'fox', img: fox, nickname: 'Alisa', photo: foxx, place: 'Odessa'},
     {id: 4, name: 'hedgehog', img: hedgehog, nickname: 'Tosha', photo: hedg, place: 'Dnipro'},
-    {id: 6, name: 'parrot', img: parrot, nickname: 'Kesha', photo: parr, place: 'Lviv'},
-    {id: 7, name: 'peacoc', img: peacoc, nickname: 'Pasha', photo: peac, place: 'Sumy'}
+    {id: 5, name: 'parrot', img: parrot, nickname: 'Kesha', photo: parr, place: 'Lviv'},
+    {id: 6, name: 'peacoc', img: peacoc, nickname: 'Pasha', photo: peac, place: 'Sumy'}
   ]
 
   const [timesFed, setTimesFed] = useState(0)
@@ -86,7 +86,7 @@ const Zoo = () => {
                 <h3 className='nickname'>{animal.nickname}</h3>
                 <img className='animal__back' src={animal.photo} />
                 <p className='animal__place'>Lives in {animal.place}</p>
-                 <button onClick={feedHandler} disabled={false} className='feedBtn'>feed</button>
+                 <button style={{backgroundColor: animal.id % 2 === 0 ? '#000dff' : '#ffea00', color: animal.id % 2 === 0 ? '#fff' : '#000'}} onClick={feedHandler} disabled={false} className='feedBtn'>feed</button>
               </div>
             </div>
           </div>

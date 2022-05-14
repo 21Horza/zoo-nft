@@ -11,16 +11,12 @@ use crate::internal::*;
 pub use crate::metadata::*;
 pub use crate::mint::*;
 pub use crate::nft_core::*;
-pub use crate::approval::*;
-pub use crate::royalty::*;
 
 mod internal;
-mod approval; 
 mod enumeration; 
 mod metadata; 
 mod mint; 
 mod nft_core; 
-mod royalty; 
 
 #[near_bindgen]
 #[derive(BorshDeserialize, BorshSerialize, PanicOnDefault)]
@@ -68,7 +64,7 @@ impl Contract {
             owner_id,
             NFTContractMetadata {
                 spec: "nft-1.0.0".to_string(),
-                name: "Donation to animals in Ukrain NFT".to_string(),
+                name: "Donation to animals in Ukraine NFT".to_string(),
                 symbol: "Animal Rescuer".to_string(),
                 icon: None,
                 base_uri: None,
