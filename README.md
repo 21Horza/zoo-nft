@@ -1,33 +1,35 @@
+Donation to Zoo animals
+======
+The app is for dontaion NEAR testnet tokens to zoo animals. Demo is available at https://21horza.github.io/zoo
+
+
 How to use
 ======
 
-This app is an example of donation tokens to zoo animals which is using NFT smart contract with a basic logic
+1. Register your testnet NEAR account at https://wallet.testnet.near.org/ and (or) log in
 
-
-Step 1: Register your NEAR testnet account 
--------------------------------------
-
-https://wallet.testnet.near.org/
-
-Step 2: Open the website and follow instructions
 ------------------------------------------
 
-https://21horza.github.io/zoo-nft/
+<img width="722" alt="Screenshot 2022-07-30 at 19 34 37" src="https://user-images.githubusercontent.com/81642088/181913719-5548a7c5-9cce-4ebd-8d9b-ac00aa10f3dd.png">
 
 
-Quick Start
-===========
 
-To run this project locally:
+Step 2: Hover over each card to check animals and read more info
+------------------------------------------
 
-1. Prerequisites: Make sure you've installed [Node.js] ≥ 12
-2. Install dependencies: `yarn install`
-3. Run the local development server: `yarn dev` (see `package.json` for a
-   full list of `scripts` you can run with `yarn`)
+![1 shot](https://user-images.githubusercontent.com/81642088/181914286-8e2d0370-6739-494b-9ac7-36df29e090fc.gif)
 
-Now you'll have a local development environment backed by the NEAR TestNet!
 
-Go ahead and play with the app and the code. As you make code changes, the app will automatically reload.
+Step 3: Select animals to feed. When you are done click on MINT NFT button
+------------------------------------------
+
+![2 shot](https://user-images.githubusercontent.com/81642088/181914400-dfb2af31-b078-47a9-887e-3eeb1f03e2eb.gif)
+
+
+Step 4: Check your collectibles to see the NFT
+------------------------------------------
+![3 shot](https://user-images.githubusercontent.com/81642088/181914454-f268714f-15c9-4229-b387-2cc4bed2a947.gif)
+
 
 
 Exploring The Code
