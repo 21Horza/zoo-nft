@@ -1,6 +1,6 @@
 Donation to Zoo animals
 ======
-The app is for dontaion NEAR testnet tokens to zoo animals. Demo is available at https://21horza.github.io/zoo
+The app is for dontaion NEAR testnet tokens to zoo animals. Demo is available at https://21horza.github.io/zoo-nft/
 
 
 How to use
